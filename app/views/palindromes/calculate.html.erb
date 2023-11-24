@@ -1,0 +1,19 @@
+<h1>Palindrome Numbers</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Decimal</th>
+    <th>Binary</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @palindromes.each do |palindrome| %>
+    <tr>
+      <td><%= palindrome[:decimal] %></td>
+      <td><%= palindrome[:binary] %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<%=link_to "repeat calculation", palindromes_path %>
